@@ -12,10 +12,12 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class TitleScreenController {
+
     private Stage stage;
     private Scene scene;
     private Parent root;
-    @FXML private AnchorPane gameScene;
+    @FXML
+    private AnchorPane gameScene;
 
     // Exit menu option will provide an alert, exits the application on Confirm
     public void gameExit() {
@@ -38,6 +40,7 @@ public class TitleScreenController {
         stage.setScene(scene);
         stage.show();
     }
+
     // Switches to load game
     public void loadGame(ActionEvent e) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("load-game.fxml")));

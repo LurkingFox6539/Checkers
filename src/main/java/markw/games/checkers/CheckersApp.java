@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class CheckersApp extends Application {
@@ -25,7 +24,6 @@ public class CheckersApp extends Application {
             exit(stage);
         });
     }
-
     public void exit(Stage stage) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Exit");
